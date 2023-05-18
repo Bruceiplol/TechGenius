@@ -1,0 +1,274 @@
+
+html,body {
+    box-sizing: border-box; 
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* navbar */
+nav {
+    width:100%;
+    background-color: #2a2a2a;
+    font-family: "Cairo", sans-serif;
+
+}
+.nav-container {
+    display: flex;
+    width:100%;
+    height: 5rem;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-container img {
+    width:3%;
+    padding-left:2rem;
+    flex-shrink:0;
+}
+
+.nav-container h1 {
+    padding-left: 0.5rem;
+    color:#CBB26A;
+    margin:0;
+    width:50%;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.section-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%;
+    padding-right:2rem;
+}
+
+.section-block a{
+   color:#be9e44;
+   text-decoration: none;
+   padding-left:1rem;
+   font-size:1.15rem;
+}
+
+.section-block a:hover{
+    text-decoration: underline;
+}
+
+.section-block a:active{
+    color:#efc655;
+}
+
+@media only screen and (max-width: 1024px) {
+    html,body {
+        width:100%;
+        overflow-x: hidden;
+    }
+
+    nav {
+        margin:0;
+        padding:2rem 0;
+    }
+
+    .nav-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .nav-container img {
+        padding:0;
+    }
+
+    .section-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-container h1 {
+      font-size: 1.75rem;
+      width:auto;
+    }
+    
+    .section-block a {
+      font-size: 1.75rem; 
+    }
+  }
+
+/* mission-statement */
+.mission {
+    background-image: url(../image/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 50vh;
+    display:flex;
+    align-items: center;
+}
+
+.missionblock { 
+    width:100%;
+    background-color: whitesmoke;
+    height:auto;
+}
+
+.missionblock h1, .missionblock h2{
+    text-align: center;
+    width:100%;
+    margin: 0;
+    padding: 0.3rem;
+    color:#2a2a2a;
+}
+
+
+/* About */
+.about-us {
+    width:100%;
+    background-color: #2a2a2a;
+    color:#CBB26A;
+    padding-bottom:2rem;
+}
+
+.about-container {
+    width:100%;
+}
+
+.about-container h2 {
+    margin: 0; 
+    padding: 2rem 0 0 0;
+    text-align: center; 
+}
+
+.about-us ul {
+    line-height: 3rem;
+    padding-left:15%;
+    padding-right:15%;
+    font-size:1.5rem;
+}
+
+.about-us img {
+    width:20%;
+    height: auto;
+    
+}
+
+.team {
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-container {
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+}
+
+.member h2, .member h3 {
+    margin: 0;
+    padding: 0.5rem;
+    width:auto;
+}
+
+.member img {
+    width: 15rem;
+    height:auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .about-us li {
+        font-size:1rem;
+    }
+}
+
+
+
+/* service */
+.service {
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: center;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+
+.service-box {
+    width: 30rem;
+    max-width: 40rem;
+    height:auto;
+    padding: 1.5rem;  
+}
+
+.service-box img{
+    width:20rem;
+    height:15rem;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .service-container {
+        flex-wrap: wrap;
+    }
+    
+    .service-container-2 {
+        flex-wrap: wrap;
+    }
+
+    .service-box img{
+        width:30rem;
+        height:20rem;
+        border-radius: 50%;
+    }
+
+    .service-box h3 {
+        font-size:2rem;
+    }
+
+
+}
+
+.contact {
+    background-color: #2a2a2a;
+    color:#CBB26A;
+    text-align: center;
+    padding:2rem;
+    margin:0;
+}
+
+.footer {
+    text-align: end;
+    background-color: #2a2a2a;
+    color:#CBB26A;
+    margin:0;
+    padding:0 0.5rem 0.3rem 0;  
+}
+
+.footer h4 {
+    margin:0;
+    padding:0;  
+}
